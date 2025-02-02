@@ -17,10 +17,12 @@
     </form>
     <script>
         function popId() {
-            if (!document.getElementById('txt_id').value) {
+            let userId = document.getElementById('txt_id').value;
+
+            if (!userId) {
                 alert('아이디를 입력해주세요.');
             } else {
-                alert('아이디는 ' + document.getElementById('txt_id').value + ' 입니다.');
+                alert('아이디는 ' + userId + ' 입니다.');
             }
         }
 
