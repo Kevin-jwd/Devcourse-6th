@@ -14,8 +14,19 @@
         <br>
 
         <input id="btn_login" type="button" value="Login" onclick="popId()">
+        <button onclick="compareVariable()">변수 확인</button>
     </form>
     <script>
+        /* var vs let vs const */
+        function compareVariable() {
+            let num1;
+            const num2 = 30;
+
+            num1 = 20;
+            alert('num1 : ' + num1);
+            alert('num2 : ' + num2);
+        }
+
         function popId() {
             let userId = document.getElementById('txt_id').value;
 
