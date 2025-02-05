@@ -1,5 +1,12 @@
+const mariadb = require('D:/DevCourse-6/3주차/database/connect/mariadb.js')
+
 function main(response) {
     console.log('Response : main');
+
+    mariadb.query("SELECT * FROM product", function(err, rows) {
+        console.log(rows);
+    });
+
     response.writeHead(200, {'Content-Type' : 'text/html'});
     response.write('Main page');
     response.end();
