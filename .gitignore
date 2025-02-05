@@ -1,3 +1,6 @@
 6기_도재우_0121_과제.pdf
 test.txt
-파트 05.pdf
+*.pdf
+*.png
+node_modules/
+*.json
