@@ -11,5 +11,5 @@ function third() {
 }
 
 first();
-second();
+setTimeout(second, 2000);
 third();
