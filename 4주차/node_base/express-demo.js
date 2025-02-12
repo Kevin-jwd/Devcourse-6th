@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 
+app.listen(1234)
 
 // GET + "/"
 app.get('/', function (req, res) {
@@ -17,4 +18,15 @@ app.get('/test/1', function(req, res) {
     res.send('One!');
 })
 
-app.listen(1234)
+// API : GET + /hello, /bye, /nicetomettyou 
+app.get('/hello', function(req, res) {
+    res.send('Hello!');
+})
+
+app.get('/bye', function(req, res) {
+    res.send('Bye!');
+})
+
+app.get('/nicetomeetyou', function(req, res) {
+    res.send('Nice to meet U!');
+})
