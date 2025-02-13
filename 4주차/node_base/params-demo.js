@@ -18,9 +18,9 @@ app.get("/products/:n", function (req, res) {
 // Youtube video path test
 // https://www.youtube.com/watch?v=pSVAgMIc9-c&t=580s
 app.get("/watch", function (req, res) {
-    const q = req.query;
+    const { v, t } = req.query;
     res.json({
-        video: q.v,
-        timeline: q.t,
+        video: v,
+        timeline: t,
     });
 });
